@@ -11,13 +11,17 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {HeaderComponent} from './header/header.component';
+import {PostListComponent} from './post-list/post-list.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+
 import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostCreateComponent,
-    HeaderComponent
+    HeaderComponent,
+    PostListComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +31,8 @@ import { from } from 'rxjs';
     MatInputModule,
     MatCardModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
