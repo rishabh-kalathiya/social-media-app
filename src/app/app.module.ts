@@ -14,14 +14,16 @@ import {HeaderComponent} from './header/header.component';
 import {PostListComponent} from './posts/post-list/post-list.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 
-import { from } from 'rxjs';
+// import {  } from 'rxjs';
+import { AnimationComponent } from './animation/animation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostCreateComponent,
     HeaderComponent,
-    PostListComponent
+    PostListComponent,
+    AnimationComponent
   ],
   imports: [
     BrowserModule,

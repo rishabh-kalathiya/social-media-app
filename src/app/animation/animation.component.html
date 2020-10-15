@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>Animations</h1>
+            <button class="btn btn-primary"(click)="onAnimate()">Animate</button>&nbsp;
+            <button class="btn btn-primary">Shrink</button>
+            <hr>
+            <div [@divState]='state' style="height:100px; width:100px"></div>
+            <hr>
+        </div>  
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <input type="text" (keyup.enter)="onAddItem(input.value)" #input>&nbsp;
+            <button class="btn btn-primary" (click)="onAddItem(input.value)">Add Item</button>
+            <hr>
+            <ul class="list-group">
+                <li class="list-group-item"
+                (click)="onDeleteItem(item)"
+                *ngFor="let item of items"
+                >{{item}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
